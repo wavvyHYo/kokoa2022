@@ -1,22 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <title>Welcome to Kokoa</title>
-
-
-
-   </head>
-   <body>
-      
-
-      <div id="status-bar">
-         <div class="status-bar__column"></div>
-
+  <head>
+    <title>Welcome to Kokoa</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fa-solid fa-wifi"></i>
       </div>
-   </body>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
 
+      <div class="status-bar__column">
+        <span>110%</span>
+        <i class="fa-solid fa-battery-full"></i>
+        <i class="fa-solid fa-bolt"></i>
+      </div>
+    </div>
+    <header class="welcome-header">
+      <h1 class="welcome-header__title">Welcomoe to KakaoTalk</h1>
+      <p class="welcome-header__text">
+        if you have a kokoa account, log in with your email or  phone number.
+      </p>
+    </header>
 
-
-
-
+    <form id="login-form">
+      <input type="text" placeholder="Email or phone number" />
+      <input type="password" placeholder="password" />
+      <input type="submit" value="Log In" />
+      <a href="#">Find Kakao Account or Password</a>
+    </form>
+    <script
+      src="https://kit.fontawesome.com/b9efc7ad29.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
